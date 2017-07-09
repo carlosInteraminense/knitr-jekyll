@@ -29,7 +29,7 @@ As questões, deste relatório, foram respondidas com base na análise das vari�
 
 É esperado que *User Rating* seja um valor entre 0 e 10, para ter certeza que **todos** os valores estão nessa faixa de valor, podemos verificar o seguinte histograma:
 
-![plot of chunk unnamed-chunk-3](/minhas-analises/figure/source/problema-1-cp-4/checkpoint-4-carlos-interaminense/unnamed-chunk-3-1.png)
+![plot of chunk unnamed-chunk-3](/minhas-analises/figure/source/problema-1-cp-4/2017-07-09-problema-1-checkpoint-4/unnamed-chunk-3-1.png)
 
 A partir do histograma anterior, podemos perceber a variável *User rating* possui poucos valores até 6 e que a maioria está localizada entre 8 e 9, incluindo-os. Valores próximos de 10 são minoria também, assim como os valores abaixo de 6.
 
@@ -43,7 +43,7 @@ Para responder as perguntas a seguir, foi considerado o mesmo subconjunto de sé
 **R.** Para responder esta pergunta, será análisada as medianas de cada temporada de cada série. A mediana foi a medida estatística escolhida porque ela não "sofre" com valores destoantes. A seguir é apresentado os gráficos das medianas do *UserRating* para cada temporada de cada série.
 Para melhor entendimento do porquê que a mediana também foi usada, considere o gráfico da série **Daredevil** abaixo, percebe-se que o valor da mediana da segunda temporada é maior do que o da primeira. Portanto, isso significa que pelo menos metade dos episódios da segunda temporada de Daredevil teve melhor *UserRating* do que os da primeira. 
 
-![plot of chunk unnamed-chunk-5](/minhas-analises/figure/source/problema-1-cp-4/checkpoint-4-carlos-interaminense/unnamed-chunk-5-1.png)
+![plot of chunk unnamed-chunk-5](/minhas-analises/figure/source/problema-1-cp-4/2017-07-09-problema-1-checkpoint-4/unnamed-chunk-5-1.png)
 
 Ao observar o gráfico acima, percebe-se que não existe uma tendência que as séries sempre melhoram ou sempre pioram de uma temporada para outra. Existem dois exemplos, do subconjunto usando, que as temporadas foram melhores de uma temporada para a outra, que foram: Sense8 e Daredevil. Porém, para The 100 e Flash isso não acontece, pois as temporadas não seguem uma melhoria ou um decaimento entre todas temporadas. Percebe-se que da primeira para a segunda temporada de ambas (The 100 e Flash) existe uma melhora, porém, entre a segunda e a terceira temporada há um decaimento.
 
@@ -53,7 +53,7 @@ Para responder esta pergunta, gráficos para cada temporada de cada série são 
 Percebe-se que a quantidade de temporadas que tem o último episódio mais bem avaliado (6 temporadas) é superior a quantidade de temporadas que não tem (5 temporadas). Porém, a diferença é pequena (apenas 1), para o subconjunto de séries que foi considerado neste relatório. Portanto, para o conjunto de séries usado, o último episódio das temporadas foi o mais bem avaliado, no geral.
 O resultado pode ser visto no gráfico a seguir:
 
-![plot of chunk unnamed-chunk-6](/minhas-analises/figure/source/problema-1-cp-4/checkpoint-4-carlos-interaminense/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](/minhas-analises/figure/source/problema-1-cp-4/2017-07-09-problema-1-checkpoint-4/unnamed-chunk-6-1.png)
 
 #### Duas outras perguntas a partir dos resultados anteriores:
 #### **3) A partir do subconjunto que foi escolhido, qual a série que teve a temporada mais regular? E a mais irregular?**
@@ -61,7 +61,7 @@ O resultado pode ser visto no gráfico a seguir:
 **R.** Para responder esta pergunta, foi computado o bloxpot de cada temporada das séries. Para saber qual a temporada mais regular, é preciso observar o bloxpot que tem uma menor distância inter quartis. Neste caso, podemos observar que a segunda temporada de Sense8 foi a temporada mais regular, seguida pela primeira temporada de Daredevil.  
 A partir do gráfico a seguir, podemos prceber que a terceira temporada de The100 foi a temporada mais irregular do subconjunto de dados usados no presente trabalho.
 
-![plot of chunk unnamed-chunk-7](/minhas-analises/figure/source/problema-1-cp-4/checkpoint-4-carlos-interaminense/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-7](/minhas-analises/figure/source/problema-1-cp-4/2017-07-09-problema-1-checkpoint-4/unnamed-chunk-7-1.png)
 
 
 {% highlight r %}
@@ -99,7 +99,7 @@ seriesEscolhidas %>%
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-9](/minhas-analises/figure/source/problema-1-cp-4/checkpoint-4-carlos-interaminense/unnamed-chunk-9-1.png)
+![plot of chunk unnamed-chunk-9](/minhas-analises/figure/source/problema-1-cp-4/2017-07-09-problema-1-checkpoint-4/unnamed-chunk-9-1.png)
 
 Percebe-se que a série que possui mais episódios por temporada é a Flash, seguda por The100, Sense8 e Daredevil.  
 Se analisarmos o gráfico da questão anterior (**3**) podemos perceber que a série que tem as temporadas mais irregulares é Flash, pois, no geral, apresenta os boxplot com as maiores distâncias inter quartis que as demais, seguida por Daredevil, Sense8 e The100, que surpreendentimente apresenta as temporadas com menor irregularidade do subconjunto analisado. Perceba que, apesar de The100 ter sido analisada como a pior série no Checkpoint 1, por apresentar a menor mediana das avaliações gerais, ela apresenta as temporadas mais regulares.  
