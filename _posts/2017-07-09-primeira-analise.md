@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Primeira Postagem (Ubuntu)
+title:  Primeira vez no R
 date: 2017-07-09 01:01:23
 published: true
 tags: [htmlwidgets, r]
@@ -74,7 +74,7 @@ dados %>%
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-3](/figure/source/problema-1-cp-1/2017-07-09-primeira-analise/unnamed-chunk-3-1.png)
+![plot of chunk unnamed-chunk-3](/minhas-analises/figure/source/problema-1-cp-1/2017-07-09-primeira-analise/unnamed-chunk-3-1.png)
 
 A partir do histograma anterior, podemos perceber a variável *User rating* possui poucos valores até 6 e que a maioria está localizada entre 8 e 9, incluindo-os. Valores próximos de 10 são minoria também, assim como os valores abaixo de 6.
 
@@ -119,7 +119,7 @@ seriesEscolhidas %>%
   geom_point()
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-6](/figure/source/problema-1-cp-1/2017-07-09-primeira-analise/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](/minhas-analises/figure/source/problema-1-cp-1/2017-07-09-primeira-analise/unnamed-chunk-6-1.png)
 
 b. Qual das séries que você escolheu tem episódios de qualidade mais irregular segundo o IMDB? A diferença é grande? Pequena?  
   R.  Visualmente, a partir dos gráficos a seguir, em que cada ponto do gráfico representa um episódio da série no eixo x e o valor do *User rating* no eixo y, percebe-se que a série The 100 apresenta uma qualidade mais irregular que as demais. Pois se analisarmos a reta que mais se aproxima de todos os pontos, pode-se perceber que ela é a série com qualidade mais irregular.  
