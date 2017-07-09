@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  Primeira Postagem (Ubuntu)
-date: `r Sys.time()`
+title:  Primeira vez no R (Problema 1 Checkpoint 1)
 published: true
 tags: [htmlwidgets, r]
 

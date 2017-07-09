@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Primeira vez no R (Problema 1 Checkpoint 1)
-date: 2017-07-09 01:01:23
 published: true
 tags: [htmlwidgets, r]
 
