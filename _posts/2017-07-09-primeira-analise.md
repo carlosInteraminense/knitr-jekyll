@@ -135,4 +135,4 @@ seriesEscolhidas %>%
   geom_smooth(method=lm)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-7](/figure/source/problema-1-cp-1/2017-07-09-primeira-analise/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-7](/minhas-analises/figure/source/problema-1-cp-1/2017-07-09-primeira-analise/unnamed-chunk-7-1.png)
